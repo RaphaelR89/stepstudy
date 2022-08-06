@@ -1,38 +1,20 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css';
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* .container-stepper {
-  width: 900px;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  justify-content: center;
-} */
-
-/* .grid-step {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15px;
-  position: relative;
-} */
-
 .grid-step {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+
+  /* grid-template-columns: auto 308 auto 308 auto 308 auto; */
   grid-template-rows: 30px 70px 30px;
-  max-height: 130px;
-  max-width: 1000px;
+  max-height: 235px;
+  max-width: 1036px;
   justify-items: center;
   align-items: end;
-  gap: 5px;
+  column-gap: 30px;
 }
 
 .step-product {
@@ -51,6 +33,8 @@
   grid-column: 7/8;
   grid-row: 3/4;
   align-self: start;
+  font-weight: 600;
+  font-size: 15;
 }
 
 .step-user-product {
@@ -60,7 +44,7 @@
 }
 .circle-step {
   border-radius: 50%;
-  border: 1px black solid;
+  border: 1px #707070 solid;
   height: 66px;
   width: 66px;
   background-color: white;
@@ -97,6 +81,7 @@
   align-self: center;
   display: flex;
   height: 100%;
+  max-width: 308px;
   position: relative;
 }
 .arrow-step2 {
@@ -104,6 +89,7 @@
   grid-row: 2/3;
   align-self: center;
   display: flex;
+  max-width: 308;
   height: 100%;
 }
 .arrow-step3 {
@@ -114,46 +100,9 @@
   height: 100%;
 }
 .arrow-step-img-disable {
-  width: 200px;
+  width: 308px;
   height: 100%;
   align-self: center;
+  margin-top: 15px;
   z-index: 9;
 }
-
-/* .arrow-step-img-active {
-  width: 200px;
-  height: 100%;
-  align-self: center;
-  display: block;
-}
-
-.arrow-step-img-inactive {
-  width: 200px;
-  height: 100%;
-  align-self: center;
-  display: none;
-} */
-
-/* .facheck {
-  width: 36px;
-  height: 34px;
-}
-
-.arrow-icon {
-  position: absolute;
-  right: calc(90%);
-  content: '';
-  font-size: large;
-  left: 280px;
-}
-
-.wrapper::after {
-  position: absolute;
-  content: '';
-  width: 17%;
-  left: 16%;
-  height: 4px;
-  background-color: black;
-  z-index: -1px;
-  top: 56px;
-} */
